@@ -1,0 +1,38 @@
+.tab_menu {
+    display: flex;
+    position: relative;
+    // justify-content: space-around;
+    background: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #eaeaea;
+    position: sticky;
+    top: 97px;
+    background-color: white;
+    z-index: 1000;
+  }
+  
+  .tab {
+    background: none;
+    border: none;
+    // padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #888;
+    position: relative;
+    width: 25%;
+  }
+  
+  .active {
+    color: #007bff;
+  }
+  
+  .indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 25%;
+    height: 3px;
+    background: rgb(95, 95, 255);
+    transition: transform 0.2s ease-in-out;
+  }
+  

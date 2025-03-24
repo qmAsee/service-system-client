@@ -6,7 +6,7 @@ import { Navigation } from "../../components/Navigation/Navigation";
 export const MobileLayout = () => {
   return (
     <div className={styles.mobile_layout}>
-      <main>
+      <main className={styles.main_content}>
         <Outlet />
       </main>
       <Navigation />

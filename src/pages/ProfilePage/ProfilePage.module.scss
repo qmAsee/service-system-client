@@ -1,0 +1,100 @@
+.profile_header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #d8d8d8;
+    gap: 15px;
+
+    .profile_main_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        .profile_image {
+            width: 70px;
+        }
+
+        .profile_name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+
+    .profile_contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        font-size: 12px;
+        color: rgb(143, 143, 143);
+    }
+}
+
+.profile_schedule {
+    display: flex;
+    padding: 25px 10px;
+    border-bottom: 1px solid #d8d8d8;
+    box-sizing: border-box;
+    align-items: center;
+    gap: 10px;
+    
+
+    .profile_schedule_title {
+        font-size: 14px;
+        color: rgb(95, 95, 255);
+        text-decoration: underline;
+    }
+}
+
+.profile_bonuses {
+    display: flex;
+    padding: 25px 10px;
+    border-bottom: 1px solid #d8d8d8;
+    box-sizing: border-box;
+
+    .profile_suggested_bonus {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        box-sizing: border-box;
+        width: 100%;
+        background: linear-gradient(to bottom right, #e3b5ff, #b9c4ff);
+        border-radius: 10px;
+
+        .profile_bonus_text {
+            font-size: 26px;
+            font-weight: bold;
+            color: white;
+        }
+    }
+}
+
+.profile_certificates {
+    display: flex;
+    padding: 15px 10px;
+    border-bottom: 1px solid #d8d8d8;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+    .profile_certificates_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .profile_certificates_title {
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+
+        .profile_certificates_count {
+            color: rgb(143, 143, 143);
+        }
+    }
+}

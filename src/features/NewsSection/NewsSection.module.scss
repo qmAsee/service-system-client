@@ -1,0 +1,55 @@
+
+.homepage_list {
+    padding-bottom: 59px;
+    box-sizing: border-box;
+
+    .homepage_list_element {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        list-style: none;
+        border-bottom: 1px solid rgb(219, 219, 219);
+        padding: 10px 20px;
+        box-sizing: border-box;
+    
+        .homepage_list_element_pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+        }
+    
+        .homepage_element_date {
+            font-size: 12px;
+            color: rgb(160, 160, 160);
+        }
+    
+        .homepage_element_type {
+            display: block;
+            font-size: 11px;
+            padding-bottom: 2px;
+            box-sizing: border-box;
+            width: fit-content;
+        }
+    
+        .homepage_element_info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 60%; 
+    
+            .homepage_element_title {
+                font-weight: bold;
+            }
+        }
+        
+        .homepage_element_period {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 10px;
+        }
+    }
+}
+
+
+

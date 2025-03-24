@@ -362,6 +362,7 @@ template {
   display: none;
 }
 
+
 /* Убираем внешние отступы у текстовых элементов */
 body,
 h1,
@@ -407,4 +408,23 @@ input,
 textarea,
 button {
   padding: 0;
+}
+
+
+.swiper {
+  overflow: visible !important;
+}
+
+
+@-webkit-keyframes rotating {
+  from{
+      -webkit-transform: rotate(0deg);
+  }
+  to{
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+.loader {
+  -webkit-animation: rotating 2s linear infinite;
 }

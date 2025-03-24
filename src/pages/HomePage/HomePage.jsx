@@ -1,13 +1,16 @@
-import React, { useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import styles from "./HomePage.module.scss";
 import "swiper/css";
 import profile_icon from "../../assets/profile_icon.svg";
 import { Coins, Gift } from "lucide-react";
 import { mock_pinned_news_data } from "../../utils/mock_pinned_news_data";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { TabMenu } from "../../features/TabMenu/TabMenu";
+import { TabMenuSections } from "../../features/TabMenuSections/TabMenuSections";
 
 export const HomePage = () => {
   const personalRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,8 +20,8 @@ export const HomePage = () => {
       const sectionHeight = personalSection.offsetHeight;
       const scrollPosition = window.scrollY;
 
-      const maxScroll = sectionHeight * 0.8; 
-      let opacity = 1 - scrollPosition / maxScroll; 
+      const maxScroll = sectionHeight * 0.8;
+      let opacity = 1 - scrollPosition / maxScroll;
 
       if (opacity < 0) opacity = 0;
       if (opacity > 1) opacity = 1;
@@ -43,7 +46,9 @@ export const HomePage = () => {
             <img src={profile_icon} className={styles.homepage_profile_pic} />
             <div className={styles.homepage_name_wrapper}>
               <span>Иван Иванов</span>
-              <span className={styles.homepage_comingback}>С возвращением!</span>
+              <span className={styles.homepage_comingback}>
+                С возвращением!
+              </span>
             </div>
           </div>
           <div className={styles.homepage_personal_bonuses}>
@@ -51,7 +56,7 @@ export const HomePage = () => {
               <Coins color={"#ffff47"} width={20} />
               <span className="text-xs">10</span>
             </div>
-            <Gift color={"#6c8de0"} w={20} />
+            <Gift color={"#5f5fff"} w={20} />
           </div>
         </div>
         <div className={styles.homepage_personal_course}>
@@ -68,7 +73,7 @@ export const HomePage = () => {
       </section>
       <section className={styles.pinned_news}>
         <h2 className="font-bold">Закрепленные новости</h2>
-        <Swiper spaceBetween={8} slidesPerView={3} loop navigation>
+        <Swiper spaceBetween={8} slidesPerView={3} loop={false}>
           {/* <ul className={styles.pinned_news_list}> */}
           {mock_pinned_news_data.map((el) => {
             return (
@@ -84,8 +89,10 @@ export const HomePage = () => {
           {/* </ul> */}
         </Swiper>
       </section>
-
-      
+      <section className={styles.homegape_content}>
+        <TabMenu activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
+        <TabMenuSections activeIndex={activeIndex} />
+      </section>
     </div>
   );
 };
