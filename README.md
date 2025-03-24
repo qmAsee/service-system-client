@@ -1,6 +1,6 @@
-git clone https://github.com/qmAsee/service-system-client
+git clone https://github.com/qmAsee/service-system-client.git
 
-cd service-system
+cd service-system-client
 
 npm i
 
