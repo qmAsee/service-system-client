@@ -1,0 +1,31 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    background: white;
+    border-top: 1px solid #ddd;
+    // margin-top: auto;
+    position: fixed;
+    bottom: 0;
+
+    .navigation_item {
+        width: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        text-decoration: none;
+        color: #696969;
+        padding: 10px 5px;
+        box-sizing: border-box;
+        
+        .navigation_item_text {
+            font-size: 10px;
+        }
+    }
+
+    .navigation_item_active { 
+        color: rgb(95, 95, 255);
+    }
+}
