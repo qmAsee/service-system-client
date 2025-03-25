@@ -2,12 +2,18 @@
     overflow: hidden !important;
     background-color: red;
 }
+
 .learningpage_search {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     width: 100%;
     gap: 10px;
     padding: 10px 15px;
+    border-bottom: 1px solid #eaeaea;
+    z-index: 2;
 
     .learningpage_ico {
         position: absolute;
