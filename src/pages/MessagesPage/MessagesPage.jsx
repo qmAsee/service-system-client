@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, Suspense } from "react";
 import styles from "./MessagesPage.module.scss";
 import { mock_people_data } from "../../utils/mock_people_data";
@@ -30,7 +31,7 @@ export const MessagesPage = () => {
             >
               {data.map((el) => {
                 return (
-                  <li className={styles.chats_chat}>
+                  <li className={styles.chats_chat} key={el.name}>
                     <img
                       src={profile_icon}
                       alt="profile_pic"

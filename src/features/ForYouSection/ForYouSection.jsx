@@ -8,7 +8,7 @@ import { CalendarDays } from "lucide-react";
 const elementTypeNames = {
   course_update: {
     name: "Обновление курса",
-    color: "#5f5fff",
+    color: "#0550ff",
   },
   new_course: {
     name: "Новый курс",

@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 .tab_menu {
     display: flex;
     position: relative;
@@ -23,7 +25,7 @@
   }
   
   .active {
-    color: #007bff;
+    color: $accent-color;
   }
   
   .indicator {

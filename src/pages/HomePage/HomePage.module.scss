@@ -19,46 +19,6 @@
         background: white; 
         z-index: 10; 
         transition: opacity 0.01s ease; 
-    
-        .homepage_profile_thumb {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        
-            .homepage_profile_pic {
-                width: 40px;
-            }
-        
-            .homepage_name_wrapper {
-                display: flex;
-                flex-direction: column;
-            }
-        
-            .homepage_comingback {
-                font-size: 11px;
-            }
-        }
-    
-        .homepage_personal_bonuses {
-            display: flex;
-            gap: 8px;
-        }
-    
-        .homepage_personal_course {
-            width: 100%;
-            background: linear-gradient(to bottom right, #e3b5ff, #b9c4ff);
-            border-radius: 10px;
-            padding: 20px;
-    
-            .homepage_personal_button {
-                width: fit-content;
-                font-size: 12px;
-                padding: 5px 25px;
-                background: white;
-                border-radius: 5px;
-                cursor: pointer;
-            }
-        }
     }
 
     .pinned_news {
@@ -73,10 +33,6 @@
         top: 0;      
         background-color: white;
         z-index: 1000;  
-
-        // .swiper {
-        //     overflow: visible !important;
-        // }
 
         .pinned_news_list {
             display: flex;
