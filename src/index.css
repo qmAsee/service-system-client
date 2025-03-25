@@ -412,7 +412,7 @@ button {
 
 
 .swiper {
-  overflow: visible !important;
+  /* overflow: visible !important; */
 }
 
 

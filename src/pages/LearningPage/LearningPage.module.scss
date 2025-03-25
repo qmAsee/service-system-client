@@ -1,0 +1,167 @@
+.swiper {
+    overflow: hidden !important;
+    background-color: red;
+}
+.learningpage_search {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    padding: 10px 15px;
+
+    .learningpage_ico {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 18px;
+        height: 18px;
+        color: rgb(136, 136, 136);
+    }
+    
+    .learningpage_search_input {
+        width: 100%;
+        padding: 15px 20px 15px 40px;
+        background-color: rgb(219, 219, 219);
+        border-radius: 20px;
+        font-size: 12px;
+    } 
+    
+    .learningpage_search_input:focus {
+        outline: none;
+    } 
+    
+    .learningpage_search_btn {
+        background-color: rgb(95, 95, 255);
+        border-radius: 20px;
+        padding: 10px 20px;
+        color: #fff;
+        font-size: 12px;
+    }
+}
+
+.training_courses {
+    padding: 10px 0 10px 15px;
+
+    .training_courses_slide {
+        max-width: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .training_courses_slide_img {
+        height: 125px;
+        border-radius: 10px;
+    }
+
+    .training_courses_slide_progress {
+        position: relative;
+        background-color: rgb(219, 219, 219);
+        height: 3px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    
+    .training_courses_slide_progress_done {
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 50px;
+        background-color: rgb(95, 95, 255);
+    }
+
+    .training_courses_slide_title {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 12px;
+        font-weight: 600;
+    } 
+    
+    .training_courses_slide_desc {
+        display: flex;
+        gap: 10px;
+        opacity: 0.5;
+    }
+
+    .training_courses_slide_desc_item {
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        gap: 2px;
+    }
+    .training_courses_slide_desc_item svg {
+        color: #c27b1f;
+    }
+}
+
+.learningpage_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    margin-bottom: 10px;
+    
+    .learningpage_head_title {
+        font-weight: 600;
+        font-size: 18px;
+    }
+    
+    .training_head_more {
+        color: rgb(95, 95, 255);
+        font-weight: 600;
+        font-size: 12px;
+    }
+}
+
+.menus_standards {
+    padding: 10px 0 10px 15px;
+
+    .menus_standards_slide {
+        position: relative;
+        max-width: 175px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .menus_standards_slide_star {
+        right: 10px;
+        top: 10px;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        fill: #686868;
+        color: #ffffff;
+    }
+
+    .menus_standards_slide_img {
+        height: 175px;
+        border-radius: 10px;
+    }
+
+    .menus_standards_slide_title {
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+
+.atestation {
+    padding: 10px 0 10px 15px;
+}
+
+.surveys {
+    padding: 10px 0 10px 15px;
+
+    .surveys_slide {
+        max-width: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .surveys_slide_img {
+        height: 150px;
+        border-radius: 10px;
+    }
+}
