@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 .profile_header {
     width: 100%;
     display: flex;
@@ -47,7 +49,7 @@
 
     .profile_schedule_title {
         font-size: 14px;
-        color: rgb(95, 95, 255);
+        color: $accent-color;
         text-decoration: underline;
     }
 }
