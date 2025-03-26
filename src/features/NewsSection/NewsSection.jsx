@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "../ForYouSection/ForYouSection.module.scss";
 import { mock_news_data } from "../../utils/mock_news_data";
 import { formatDate } from "../../utils/utils";
-import food_pic from "../../assets/food_pic.jpg";
+import food_pic from "../../assets/food_pic.webp";
 import { CalendarDays } from "lucide-react";
 
 const elementTypeNames = {
