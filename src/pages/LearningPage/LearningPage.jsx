@@ -1,6 +1,7 @@
 
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
+import { Link } from "react-router";
 import styles from "./LearningPage.module.scss";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -59,11 +60,12 @@ export const LearningPage = () => {
               <Swiper spaceBetween={15} slidesPerView={'auto'}>
                 {mock_menus_standards.map((el) => {
                   return (
-
-                    <SwiperSlide className={styles.menus_standards_slide}>
-                      <Star className={styles.menus_standards_slide_star}/>
-                      <img className={styles.menus_standards_slide_img} src={el.image} alt="" loading="lazy"/>
-                      <h3 className={styles.menus_standards_slide_title}>{el.title}</h3>
+                    <SwiperSlide key={el.productId} className={styles.menus_standards_slide}>
+                      <Link to={`/dishes/${el.productId}`}>
+                        <Star className={styles.menus_standards_slide_star}/>
+                        <img className={styles.menus_standards_slide_img} src={el.image} alt="" loading="lazy"/>
+                        <h3 className={styles.menus_standards_slide_title}>{el.name}</h3>
+                      </Link>
                     </SwiperSlide>
                   );
                 })}
@@ -82,9 +84,9 @@ export const LearningPage = () => {
                 <span className={styles.training_head_more}>Показать все (1)</span>
               </div>
               <Swiper spaceBetween={15} slidesPerView={'auto'}>
-                {mock_surveys.map((el) => {
+                {mock_surveys.map((el, index) => {
                   return (
-                    <SwiperSlide className={styles.surveys_slide}>
+                    <SwiperSlide key={index} className={styles.surveys_slide}>
                       <img className={styles.surveys_slide_img} src={el.image} alt="" loading="lazy"/>
                     </SwiperSlide>
                   );
