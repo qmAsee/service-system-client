@@ -1,0 +1,123 @@
+.course_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    height: 40px;
+    background: #e6e6e6;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    position: sticky;
+
+    .course_title {
+        font-size: 14px;
+        font-weight: 500;
+        max-width: 70%;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .course_back {
+        position: absolute;
+        top: 20%;
+        left: 5px;
+        cursor: pointer;
+    }
+}
+
+.course_content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 auto;
+    gap: 20px;
+    // align-items: center;
+
+    .course_image {
+        border-radius: 15px;
+        margin: 0 auto;
+    }
+
+    .course_info {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .course_content_title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .course_description {
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .course_materials {
+            display: flex;
+            gap: 20px;
+        }
+
+        .course_material {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            .course_material_info {
+                font-size: 14px;
+                font-weight: 500;
+                color: #838383;
+            }
+        }
+    }
+
+    .course_lessons_list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .course_lesson_wrapper {
+            display: flex;
+            gap: 10px;
+        }
+
+        .course_lesson_icon_wrapper {
+            background-color: #137d16;
+            padding: 5px;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+
+        .course_lesson_info_wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            overflow: hidden;
+
+            .course_lesson_caption {
+                font-size: 12px;
+                color: #b8b8b8;
+            }
+
+            .course_lesson_title {
+                font-size: 14px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+
+    .course_test_icon_wrapper {
+        padding: 5px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background-color: #f0f0f0;
+    }
+    
+}

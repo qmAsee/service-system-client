@@ -1,0 +1,77 @@
+@import "../../../styles/variables";
+
+.training_courses {
+    padding: 10px 0 10px 15px;
+
+    .training_courses_slide {
+        max-width: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+    }
+
+    .training_courses_slide_img {
+        height: 125px;
+        border-radius: 10px;
+    }
+
+    .training_courses_slide_progress {
+        position: relative;
+        background-color: rgb(219, 219, 219);
+        height: 3px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    
+    .training_courses_slide_progress_done {
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 50px;
+        background-color: $accent-color;
+    }
+
+    .training_courses_slide_title {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 12px;
+        font-weight: 600;
+    } 
+    
+    .training_courses_slide_desc {
+        display: flex;
+        gap: 10px;
+        opacity: 0.5;
+    }
+
+    .training_courses_slide_desc_item {
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        gap: 2px;
+    }
+    .training_courses_slide_desc_item svg {
+        color: #c27b1f;
+    }
+}
+
+.learningpage_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    margin-bottom: 10px;
+    
+    .learningpage_head_title {
+        font-weight: 600;
+        font-size: 18px;
+    }
+    
+    .training_head_more {
+        color: rgb(95, 95, 255);
+        font-weight: 600;
+        font-size: 12px;
+    }
+}
