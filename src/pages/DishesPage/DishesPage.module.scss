@@ -1,0 +1,21 @@
+.dishes_head {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eaeaea;
+    z-index: 2;
+}
+
+.dishes_nav {
+    position: sticky;
+    top: 45px;
+    background-color: #fff;
+    display: flex;
+    gap: 5px;
+    padding: 10px 15px;
+    z-index: 2;
+}

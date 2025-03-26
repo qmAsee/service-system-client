@@ -1,0 +1,54 @@
+.dishes_features_image {
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.dishes_features_star {
+    right: 25px;
+    top: 20px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    fill: #686868;
+    color: #ffffff;
+}
+
+.dishes_features_name {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.dishes_features_description {
+    margin: 20px 0;
+}
+
+.dishes_features_title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.dishes_features_title_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.dishes_features_title_list li {
+    background-color: rgba(95, 95, 255, 0.2);
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: rgb(95, 95, 255);
+    font-weight: 500;
+}
+
+.dishes_features_nutrition_info {
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #eaeaea;
+}

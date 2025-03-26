@@ -1,0 +1,18 @@
+.dishes_gallery_title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.dishes_gallery_slide {
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dishes_gallery_slide img {
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+}

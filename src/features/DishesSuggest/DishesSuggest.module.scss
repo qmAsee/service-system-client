@@ -1,0 +1,33 @@
+.dishes_suggest_title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.dishes_suggest_slide {
+    position: relative;
+    max-width: 175px;
+}
+
+.dishes_suggest_slide img{
+    height: 75px;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.dishes_suggest_star {
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    fill: #686868;
+    color: #ffffff;
+}
+
+.dishes_suggest_name {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+}
