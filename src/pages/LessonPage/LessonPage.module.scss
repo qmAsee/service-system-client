@@ -1,0 +1,82 @@
+@import "../../styles/variables";
+
+.lessonpage_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    height: 40px;
+    background: #e6e6e6;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    position: sticky;
+
+    .lesson_header_title {
+        font-size: 14px;
+        font-weight: 500;
+        max-width: 70%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    
+
+    .lesson_back {
+        position: absolute;
+        top: 20%;
+        left: 5px;
+        cursor: pointer;
+    }
+}
+
+.lessonpage_content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 auto;
+    gap: 20px;
+
+    .lesson_heading {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .lesson_title {
+            font-size: 20px;
+            font-weight: 500;
+        };
+    
+        .lesson_image {
+            border-radius: 15px;
+        };
+    }
+
+    .lesson_block {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .block_title {
+            font-weight: bold;
+        }
+
+        .block_text {
+            font-size: 12px;
+            line-height: 1.5;
+        }
+    }
+
+    .lesson_endbutton {
+        width: 60%;
+        background-color: $accent-color;
+        padding: 10px 20px;
+        margin: 0 auto;
+        font-size: 14px;
+        color: white;
+        border-radius: 15px;
+    }
+}

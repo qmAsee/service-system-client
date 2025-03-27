@@ -30,7 +30,7 @@ const TrainingCourses = () => {
         <Swiper spaceBetween={15} slidesPerView={'auto'}>
             {coursesWithTestCounts.map((el) => {
             return (
-                <SwiperSlide className={styles.training_courses_slide} key={el.id} onClick={() => navigate(`/learning/course/${el.id}`)}>
+                <SwiperSlide className={styles.training_courses_slide} key={el.id} onClick={() => navigate(`/learning/courses/${el.id}`)}>
                     <img className={styles.training_courses_slide_img} src={el.image} alt="" loading="lazy"/>
                     <div className={styles.training_courses_slide_progress}>
                         <div className={styles.training_courses_slide_progress_done}></div>

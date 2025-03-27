@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    height: 40px;
+    background: #e6e6e6;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    position: sticky;
+
+    .header_back_button {
+        position: absolute;
+        top: 20%;
+        left: 5px;
+        cursor: pointer;
+    }
+
+    .header_title {
+        font-size: 14px;
+        font-weight: 500;
+        max-width: 70%;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
