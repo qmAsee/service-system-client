@@ -7,10 +7,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-import RecipeContent from "../../features/RecipeContent/RecipeContent";
-import DishesHead from "../../features/DishesHead/DishesHead";
-import DishesNav from "../../features/DishesNav/DishesNav";
-
 // Предзагрузка компонентов, которые могут быть отложены
 const LazyRecipeContent = React.lazy(() => import("../../features/RecipeContent/RecipeContent"));
 const LazyDishesHead = React.lazy(() => import("../../features/DishesHead/DishesHead"));
@@ -134,12 +130,12 @@ export const DishesPage = () => {
     if (activeIndex === 2 && products.next) {
       setIsTransitioning(true);
       swiper.allowTouchMove = false;
-      navigate(`/dishes/${products.next.productId}`);
+      navigate(`/learning/dishes/${products.next.productId}`);
     }
     else if (activeIndex === 0 && products.prev) {
       setIsTransitioning(true);
       swiper.allowTouchMove = false;
-      navigate(`/dishes/${products.prev.productId}`);
+      navigate(`/learning/dishes/${products.prev.productId}`);
     }
   };
 
@@ -164,8 +160,6 @@ export const DishesPage = () => {
       <AnimatePresence mode="wait">
         <motion.section
           key={productId}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, ease: "easeOut" }} // Уменьшил длительность анимации
         >
           <div>
@@ -180,13 +174,13 @@ export const DishesPage = () => {
               spaceBetween={15} 
               slidesPerView={'auto'}
               initialSlide={1}
-              speed={300} // Уменьшил скорость анимации
+              speed={150} // Уменьшил скорость анимации
               onSlideChange={handleSlideChange}
               onTransitionEnd={handleTransitionEnd}
               onSwiper={(swiper) => swiperRef.current = swiper}
               preventInteractionOnTransition={true}
-              resistanceRatio={0.7}
-              shortSwipes={false}
+              resistanceRatio={0.5}
+              shortSwipes={true}
               allowSlidePrev={!!products.prev} // Разрешаем свайп назад только если есть предыдущий продукт
               allowSlideNext={!!products.next} // Разрешаем свайп вперед только если есть следующий продукт
             >

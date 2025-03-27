@@ -1,16 +1,16 @@
-import menus_standards_1 from "../assets/menus_standards_1.jpeg";
-import menus_standards_2 from "../assets/menus_standards_2.jpeg";
-import menus_standards_3 from "../assets/menus_standards_3.jpeg";
-import menus_standards_4 from "../assets/menus_standards_4.jpeg";
-import menus_standards_5 from "../assets/menus_standards_5.jpeg";
-import menus_standards_6 from "../assets/menus_standards_6.jpeg";
-import menus_standards_7 from "../assets/menus_standards_7.jpeg";
-import menus_standards_8 from "../assets/menus_standards_8.jpeg";
+import menus_standards_1 from "../assets/menus_standards_1.webp";
+import menus_standards_2 from "../assets/menus_standards_2.webp";
+import menus_standards_3 from "../assets/menus_standards_3.webp";
+import menus_standards_4 from "../assets/menus_standards_4.webp";
+import menus_standards_5 from "../assets/menus_standards_5.webp";
+import menus_standards_6 from "../assets/menus_standards_6.webp";
+import menus_standards_7 from "../assets/menus_standards_7.webp";
+import menus_standards_8 from "../assets/menus_standards_8.webp";
 
-import menus_standards_1_gallery_1 from "../assets/menus_standards_1_gallery_1.jpeg";
-import menus_standards_1_gallery_2 from "../assets/menus_standards_1_gallery_2.jpeg";
-import menus_standards_1_gallery_3 from "../assets/menus_standards_1_gallery_3.jpeg";
-import menus_standards_1_gallery_4 from "../assets/menus_standards_1_gallery_4.jpeg";
+import menus_standards_1_gallery_1 from "../assets/menus_standards_1_gallery_1.webp";
+import menus_standards_1_gallery_2 from "../assets/menus_standards_1_gallery_2.webp";
+import menus_standards_1_gallery_3 from "../assets/menus_standards_1_gallery_3.webp";
+import menus_standards_1_gallery_4 from "../assets/menus_standards_1_gallery_4.webp";
 
 export const mock_menus_standards = [
   {

@@ -1,7 +1,7 @@
 
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
-import { Link } from "react-router";
+import { useNavigate } from "react-router-dom";
 import styles from "./LearningPage.module.scss";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -17,6 +17,8 @@ import TrainingCourses from "../../components/Learning/TrainingCourses/TrainingC
 import { motion, AnimatePresence } from "framer-motion";
 
 export const LearningPage = () => {
+  const navigate = useNavigate();
+
   const [query, setQuery] = useState('');
 
   const handleSearch = () => {
@@ -60,12 +62,10 @@ export const LearningPage = () => {
               <Swiper spaceBetween={15} slidesPerView={'auto'}>
                 {mock_menus_standards.map((el) => {
                   return (
-                    <SwiperSlide key={el.productId} className={styles.menus_standards_slide}>
-                      <Link to={`/dishes/${el.productId}`}>
-                        <Star className={styles.menus_standards_slide_star}/>
-                        <img className={styles.menus_standards_slide_img} src={el.image} alt="" loading="lazy"/>
-                        <h3 className={styles.menus_standards_slide_title}>{el.name}</h3>
-                      </Link>
+                    <SwiperSlide key={el.productId} className={styles.menus_standards_slide} onClick={() => navigate(`/learning/dishes/${el.productId}`)}>
+                      <Star className={styles.menus_standards_slide_star}/>
+                      <img className={styles.menus_standards_slide_img} src={el.image} alt="" loading="lazy"/>
+                      <h3 className={styles.menus_standards_slide_title}>{el.name}</h3>
                     </SwiperSlide>
                   );
                 })}

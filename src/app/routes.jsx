@@ -28,7 +28,7 @@ export const AppRoutes = createBrowserRouter([
 
       { path: "messages", element: <MessagesPage /> },
       { path: "profile", element: <ProfilePage /> },
-      { path: "dishes/:productId", element: <DishesPage /> },
+      { path: "learning/dishes/:productId", element: <DishesPage /> },
     ],
   },
 ]);
