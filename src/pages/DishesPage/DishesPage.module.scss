@@ -2,7 +2,7 @@
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: #e6e6e6;
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,10 +14,10 @@
 .dishes_nav {
     position: sticky;
     top: 39px;
-    background-color: #e6e6e6;
+    background-color: #fff;
     display: flex;
     gap: 5px;
     padding: 10px 15px;
     z-index: 2;
-    border-bottom: 1px solid rgb(219, 219, 219);
+    border-bottom: 1px solid #eaeaea;
 }
