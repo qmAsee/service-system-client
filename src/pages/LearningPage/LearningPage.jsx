@@ -6,7 +6,6 @@ import styles from "./LearningPage.module.scss";
 import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Search, Star } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
 
 import { mock_menus_standards } from "../../utils/mock_menus_standards";
 import { mock_surveys } from "../../utils/mock_surveys";

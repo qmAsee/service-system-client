@@ -7,10 +7,10 @@ const HeaderNav = ({ id, obj }) => {
       {obj.map((el, index) => {
         return (
           <div
-            key={el.id}
+            key={index}
             style={{
               width: `${100 / obj.length}%`,
-              background: index === id - 1 ? "rgb(95, 95, 255)" : "#fff",
+              background: index === id - 1 ? "rgb(95, 95, 255)" : "#e6e6e6",
             }}
             className={styles.dishes_nav_item}>
           </div>

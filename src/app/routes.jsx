@@ -12,11 +12,8 @@ import { DishesPage } from "../pages/DishesPage/DishesPage";
 import { TestPage } from "../pages/TestPage/TestPage";
 import { QuestionPage } from "../pages/QuestionPage/QuestionPage";
 
-
 import CoursePage from "../pages/CoursePage/CoursePage";
 import LessonPage from "../pages/LessonPage/LessonPage";
-
-
 
 export const AppRoutes = createBrowserRouter([
   {
@@ -26,7 +23,6 @@ export const AppRoutes = createBrowserRouter([
       { path: "/", element: <Navigate to="/home" replace /> },
       { path: "home", element: <HomePage /> },
       { path: "learning", element: <LearningPage /> },
-
       { path: "learning/courses/:courseId", element: <CoursePage /> },
       { path: "learning/courses/:courseId/:lessonId", element: <LessonPage /> },
       { path: "learning/courses/:courseId/test/:testId", element: <TestPage /> },

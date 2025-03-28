@@ -16,7 +16,6 @@ const LazyDishesHead = React.lazy(() =>
 const LazyHeaderNav = React.lazy(() =>
     import("../../features/HeaderNav/HeaderNav")
 );
-
 export const DishesPage = () => {
     const { productId } = useParams();
     const navigate = useNavigate();
@@ -182,9 +181,9 @@ export const DishesPage = () => {
             fallback={<div className="loading-spinner">Загрузка...</div>}
         >
             <div>
-                <section className={styles.dishes_head}>
+                <header className={styles.dishes_head}>
                     <LazyDishesHead />
-                </section>
+                </header>
                 <section className={styles.dishes_nav}>
                     <LazyHeaderNav id={products.current.productId} obj={mock_menus_standards} />
                 </section>

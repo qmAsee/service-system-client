@@ -10,6 +10,7 @@ import { motion, AnimatePresence } from "framer-motion";
 // Ленивая загрузка компонентов
 const LazyHeaderNav = React.lazy(() => import("../../features/HeaderNav/HeaderNav"));
 const LazyQuestionProperties = React.lazy(() => import("../../features/QuestionProperties/QuestionProperties"));
+const LazyModal = React.lazy(() => import("../../features/Modal/Modal"));
 
 const QuestionsState = {
   current: null,
@@ -26,6 +27,7 @@ export const QuestionPage = () => {
     remainingTime: 0,
     isTimerRunning: true
   });
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const swiperRef = useRef(null);
   const timerRef = useRef(null);
@@ -169,7 +171,10 @@ export const QuestionPage = () => {
           size={25}
           color="#696969"
           className={styles.question_back}
-          onClick={() => navigate(-1)}
+          onClick={() => {
+            setIsModalOpen(true);
+            document.body.style.overflow = "hidden";
+          }}
           aria-label="Назад"
         />
         <h1 className={styles.question_title}>
@@ -181,6 +186,21 @@ export const QuestionPage = () => {
           </div>
         )}
       </header>
+ 
+        {isModalOpen && (
+          <LazyModal 
+          onClose={() => {
+            setIsModalOpen(false)
+            document.body.style.overflow = "";
+          }}
+          onConfirm={() => {
+            setIsModalOpen(false);
+            document.body.style.overflow = "";
+            navigate(-1);
+          }}
+          />
+        )}
+   
       <section className={styles.question_nav}>
         <React.Suspense fallback={<div>Загрузка...</div>}>
           <LazyHeaderNav 
