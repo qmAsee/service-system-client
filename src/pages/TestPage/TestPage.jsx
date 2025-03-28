@@ -48,22 +48,13 @@ export const TestPage = () => {
 
   const handleStartTest = () => {
     if (test.questions?.length > 0) {
-      navigate(`${test.questions[0].id}`);
+      navigate(`${test.questions[0].id}`, { replace: true, state: { fromTest: true } });
     }
   };
 
   return (
     <>
       <Header title={"Тест"}/>
-      {/* <header className={styles.test_header}>
-        <ChevronLeft
-          size={25}
-          color="#616161"
-          className={styles.test_back}
-          onClick={() => navigate(`/learning/courses/${courseId}`)}
-        />
-        <h1 className={styles.test_title}> Тест</h1>
-      </header> */}
       <AnimatePresence mode="wait">
         <motion.section
           initial={{ y: 100, opacity: 0 }}

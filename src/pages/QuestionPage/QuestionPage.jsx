@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback, useMemo } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, useLocation } from "react-router-dom";
 import styles from "./QuestionPage.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -27,6 +27,7 @@ export const QuestionPage = () => {
     isTimerRunning: true
   });
 
+  const location = useLocation();
   const swiperRef = useRef(null);
   const timerRef = useRef(null);
   const navigate = useNavigate();
@@ -144,7 +145,7 @@ export const QuestionPage = () => {
       
       navigate(`/learning/courses/${courseId}/test/${testId}/${
         activeIndex === 2 ? next.id : prev.id
-      }`);
+      }`, { replace: true });
     }
   }, [state.isTransitioning, state.questions, navigate, courseId, testId]);
 
@@ -162,6 +163,7 @@ export const QuestionPage = () => {
     return <div className="not-found">Вопрос не найден</div>;
   }
 
+
   return (
     <>
       <header className={styles.question_header}>
@@ -169,7 +171,7 @@ export const QuestionPage = () => {
           size={25}
           color="#696969"
           className={styles.question_back}
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(`/learning/courses/${courseId}/test/${testId}`, { replace: true })}
           aria-label="Назад"
         />
         <h1 className={styles.question_title}>
