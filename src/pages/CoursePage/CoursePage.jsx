@@ -2,7 +2,7 @@
 import styles from "./CoursePage.module.scss";
 import { useEffect, useState, useCallback } from "react";
 
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, replace } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, BookOpenText, ListCheck } from "lucide-react";
 

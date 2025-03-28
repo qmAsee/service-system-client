@@ -1,6 +1,6 @@
 import styles from "./Header.module.scss";
 
-import { useNavigate } from "react-router-dom";
+import { replace, useNavigate } from "react-router-dom";
 
 import { ChevronLeft } from "lucide-react";
 

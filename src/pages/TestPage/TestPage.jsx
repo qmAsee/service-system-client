@@ -5,6 +5,7 @@ import { new_mock_training_courses } from "../../utils/mock_training_courses";
 import { ChevronLeft, HelpCircle, Clock2, Check, Trophy } from "lucide-react";
 import BestWalkthroughs from "../../features/BestWalkthroughs/BestWalkthroughs";
 import { motion, AnimatePresence } from "framer-motion";
+import Header from "../../components/Header/Header";
 
 export const TestPage = () => {
   const [test, setTest] = useState(null);
@@ -53,7 +54,8 @@ export const TestPage = () => {
 
   return (
     <>
-      <header className={styles.test_header}>
+      <Header title={"Тест"}/>
+      {/* <header className={styles.test_header}>
         <ChevronLeft
           size={25}
           color="#616161"
@@ -61,7 +63,7 @@ export const TestPage = () => {
           onClick={() => navigate(`/learning/courses/${courseId}`)}
         />
         <h1 className={styles.test_title}> Тест</h1>
-      </header>
+      </header> */}
       <AnimatePresence mode="wait">
         <motion.section
           initial={{ y: 100, opacity: 0 }}

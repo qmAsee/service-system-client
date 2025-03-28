@@ -169,7 +169,7 @@ export const QuestionPage = () => {
           size={25}
           color="#696969"
           className={styles.question_back}
-          onClick={() => navigate(`/learning/courses/${courseId}/test/${testId}`)}
+          onClick={() => navigate(-1)}
           aria-label="Назад"
         />
         <h1 className={styles.question_title}>
