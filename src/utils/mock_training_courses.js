@@ -1,33 +1,10 @@
 import training_courses_1 from "../assets/training_courses_1.webp";
+import tests_question_1 from "../assets/tests_question_1.jpeg";
 import training_courses_2 from "../assets/training_courses_2.webp";
 import lesson_guest_service from "../assets/lesson_guest_service.webp";
 import lesson_handwash from "../assets/lesson_handwash.webp";
 import lesson_order from "../assets/lesson_order.webp";
-// import training_courses_smile from "../assets/training_courses_smile.png";
 
-// export const mock_training_courses = [
-//     {
-//         title: "Welcome to The Fresh Bowl",
-//         lessons: 1,
-//         tests: 2,
-//         ico: training_courses_smile,
-//         image: training_courses_1,
-//     },
-//     {
-//         title: "Welcome to The Fresh Bowl",
-//         lessons: 1,
-//         tests: 0,
-//         ico: training_courses_smile,
-//         image: training_courses_1,
-//     },
-//     {
-//         title: "Welcome to The Fresh Bowl",
-//         lessons: 1,
-//         tests: 3,
-//         ico: training_courses_smile,
-//         image: training_courses_1,
-//     },
-// ];
 
 export const new_mock_training_courses = [
     {
@@ -84,14 +61,15 @@ export const new_mock_training_courses = [
                 title: "Проверка знаний по приветствию",
                 description:
                     "Тест проверит, как хорошо вы усвоили правила встречи гостей.",
-                timeLimit: 60,
                 questions: [
                     {
                         id: "question_001",
                         question: "Что нужно сделать при встрече гостя?",
+                        timeLimit: 60,
                         correctAnswersCount: 1,
                         type: "single",
                         hint: "Это первое действие официанта",
+                        image: tests_question_1,
                         options: [
                             "Улыбнуться",
                             "Проверить заказ",
@@ -103,8 +81,10 @@ export const new_mock_training_courses = [
                     {
                         id: "question_002",
                         question: "Какие элементы важны для этикета?",
+                        timeLimit: 90,
                         correctAnswersCount: 2,
                         type: "multiple",
+                        image: tests_question_1,
                         hint: "Подумайте о внешнем виде и поведении",
                         options: [
                             "Униформа",
@@ -121,18 +101,39 @@ export const new_mock_training_courses = [
                 title: "Тест по работе с заказами",
                 description:
                     "Проверьте свои навыки в приеме и обработке заказов.",
-                timeLimit: 120,
                 questions: [
                     {
-                        id: "question_003",
+                        id: "question_001",
                         question:
                             "Что делать, если гость хочет изменить заказ?",
+                        timeLimit: 120,
                         correctAnswersCount: 1,
                         type: "open",
+                        image: tests_question_1,
                         hint: "Это связано с гибкостью",
                         correctAnswer:
                             "Вежливо уточнить новый заказ и передать на кухню",
                     },
+                    {
+                        id: "question_002",
+                        question: "Как поступить, если гость просит рекомендацию по выбору блюда?",
+                        timeLimit: 90,
+                        correctAnswersCount: 1,
+                        type: "open",
+                        image: tests_question_1,
+                        hint: "Учитывайте предпочтения гостя",
+                        correctAnswer: "Уточнить предпочтения и ограничения, затем предложить несколько вариантов с описанием"
+                    },
+                    {
+                        id: "question_003",
+                        question: "Что делать, если гость жалуется на долгое ожидание заказа?",
+                        timeLimit: 150,
+                        correctAnswersCount: 1,
+                        type: "open",
+                        image: tests_question_1,
+                        hint: "Важно проявить понимание",
+                        correctAnswer: "Извиниться, уточнить статус заказа на кухне и предложить комплимент от заведения в качестве извинений"
+                    }
                 ],
             },
         ],
@@ -172,14 +173,16 @@ export const new_mock_training_courses = [
             {
                 id: "test_003",
                 title: "Тест по гигиене",
-                description: "Проверка знаний о санитарных нормах на кухне.",
-                timeLimit: 60,
+                description:
+                    "Проверка знаний о санитарных нормах на кухне.",
                 questions: [
                     {
                         id: "question_004",
                         question: "Как часто нужно мыть руки?",
+                        timeLimit: 60,
                         correctAnswersCount: 1,
                         type: "single",
+                        image: tests_question_1,
                         hint: "Это зависит от контакта с продуктами",
                         options: [
                             "Каждый час",

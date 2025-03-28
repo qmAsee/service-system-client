@@ -13,8 +13,8 @@ const LazyRecipeContent = React.lazy(() =>
 const LazyDishesHead = React.lazy(() =>
     import("../../features/DishesHead/DishesHead")
 );
-const LazyDishesNav = React.lazy(() =>
-    import("../../features/DishesNav/DishesNav")
+const LazyHeaderNav = React.lazy(() =>
+    import("../../features/HeaderNav/HeaderNav")
 );
 
 export const DishesPage = () => {
@@ -186,7 +186,7 @@ export const DishesPage = () => {
                     <LazyDishesHead />
                 </section>
                 <section className={styles.dishes_nav}>
-                    <LazyDishesNav productId={products.current.productId} />
+                    <LazyHeaderNav id={products.current.productId} obj={mock_menus_standards} />
                 </section>
                 <Swiper
                     key={productId}

@@ -128,6 +128,7 @@ const CoursePage = () => {
                                                 styles.course_lesson_wrapper
                                             }
                                             key={test.id}
+                                            onClick={() => navigate(`test/${test.id}`)}
                                         >
                                             <div
                                                 className={

@@ -1,0 +1,29 @@
+.test_properties_list_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.test_properties_list_item_left {
+    display: flex;
+    align-items: center;
+
+}
+.test_properties_list_item img {
+    width: 50px;
+    margin-left: 30px;
+}
+.test_properties_list_item_info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.test_properties_list_item_post {
+    font-size: 12px;
+    color: #b8b8b8;
+}
+.test_properties_list_item_time {
+    font-size: 14px;
+    color: #b8b8b8;
+}
